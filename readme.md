@@ -1,9 +1,12 @@
 
 #api-application
+
 	1)api-application contains user rest API endpoints implementation.
 	2)Consuming the Rest API using Rest DSL Component and Jetty Component of apache camel
 	3)Check com.example.api.resource.UserRestRoute.java for implementation
+
 #camel application
+
 	1)camel-application consumes the Rest services exposed by api_application using Jetty component of apache camel .
 	2)Consuming data in MULTIPART_FORM_DATA format , converting to JSON and then requesting the Rest Post API .
 	3)Check com.example.camel.resource.UserRoute.java for implementation
@@ -69,20 +72,32 @@ Once built, run container with `` -p 80:80 -p 9090:9090 `` and test
 
 #Few References
 	https://camel.apache.org/
+
 	https://camel.apache.org/manual/latest/rest-dsl.html
+
 	https://camel.apache.org/components/latest/http-component.html
+
 	https://www.javainuse.com/camel/camel-consume-rest
+
 	https://opensource.com/article/18/9/camel-rest-dsl
+
 	stackOverflow.com
+
 	https://docs.docker.com/
+
 	https://aspetraining.com/resources/blog/deploying-your-first-web-app-to-tomcat-on-docker
+
 	https://www.javainuse.com/devOps/docker/docker-war
+
 	https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html
 
 
 #Tools used :
+
 	Eclipse IDE
+
 	Postman
        
-#Build Tool
+#Build Tool :
+
 	Maven
